@@ -2,64 +2,71 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>🎧 Página Musical: Stray Kids 🎧</title>
+  <title>🎧 Mi Centro Musical Estilo Stray Kids 🎶</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 40px 20px;
-      background: url('https://i.imgur.com/hCQE9p6.jpeg') no-repeat center center fixed;
-      background-size: cover;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(120deg, #000000, #1a1a1a, #000000);
       color: #ffffff;
       text-align: center;
+      padding: 50px 20px;
+      animation: fondo 10s infinite alternate;
+    }
+
+    @keyframes fondo {
+      0% { background-color: #0d0d0d; }
+      50% { background-color: #1a1a1a; }
+      100% { background-color: #0d0d0d; }
     }
 
     h1 {
-      color: #00ffff;
-      font-size: 38px;
+      font-size: 32px;
+      color: #ff4da6;
       margin-bottom: 10px;
     }
 
-    p {
-      font-size: 18px;
-      margin-bottom: 30px;
+    h2 {
+      font-size: 20px;
+      margin-bottom: 40px;
     }
 
-    .boton {
+    .button {
       display: inline-block;
       margin: 10px;
-      padding: 14px 24px;
+      padding: 15px 25px;
       font-size: 16px;
-      background-color: #00bcd4;
-      color: #ffffff;
+      color: white;
+      background-color: #ff4da6;
+      border: none;
+      border-radius: 6px;
       text-decoration: none;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
+      transition: background 0.3s ease;
     }
 
-    .boton:hover {
-      background-color: #008c9e;
+    .button:hover {
+      background-color: #ff1a75;
     }
 
-    .footer {
+    footer {
       margin-top: 50px;
       font-size: 14px;
-      color: #dddddd;
+      color: #999;
     }
   </style>
 </head>
 <body>
-  <h1>🎶 Página Musical: Stray Kids 🎶</h1>
-  <p>Elige dónde quieres escuchar su música:</p>
+  <h1>🎧 Mi Centro Musical <br> Estilo Stray Kids 🎶</h1>
+  <h2>Haz clic en cualquiera de los botones para empezar a escuchar:</h2>
 
-  <a class="boton" href="https://soundcloud.com" target="_blank">SoundCloud</a>
-  <a class="boton" href="https://www.deezer.com/es/offers" target="_blank">Deezer</a>
-  <a class="boton" href="https://music.apple.com/es/browse" target="_blank">Apple Music</a>
-  <a class="boton" href="https://music.youtube.com" target="_blank">YouTube Music</a>
-  <a class="boton" href="https://open.spotify.com/playlist/37i9dQZF1DX4dyzvuaRJ0n" target="_blank">Spotify</a>
+  <a href="https://soundcloud.com/search?q=stray%20kids" target="_blank" class="button">SoundCloud</a>
+  <a href="https://www.deezer.com/es/search/stray%20kids" target="_blank" class="button">Deezer Free</a>
+  <a href="https://music.apple.com/us/search?term=stray%20kids" target="_blank" class="button">Apple Music</a>
+  <a href="https://music.youtube.com/search?q=stray+kids" target="_blank" class="button">YouTube Music</a>
+  <a href="https://open.spotify.com/search/stray%20kids" target="_blank" class="button">Spotify</a>
 
-  <div class="footer">
-    Página creada por ChatGPT para escuchar a Stray Kids gratis desde tu navegador.
-  </div>
+  <footer>
+    Página creada por ChatGPT para escuchar Stray Kids gratis desde tu navegador 🎧
+  </footer>
 </body>
 </html>
